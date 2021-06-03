@@ -10,12 +10,13 @@
 
 
 
-@media screen and (max-width: 640px) {
-  .icon {
-    display: none;
-  }
+@media screen and (max-width: 992px) {
   .pagelistblock {
     display: none;
+  }
+  #archive {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
