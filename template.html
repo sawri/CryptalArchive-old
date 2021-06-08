@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Cryptal Archive</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="css\style.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+</head>
+<body>       
+    <div id="loader"></div>
+
+
+    <!-- ICON & BANNER---------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section id="graphics" class="sec">
+
+    <img class="img-fluid icon rounded-circle" src="imgs/icon.png">
+    <img class="img-fluid rounded banner" src="imgs/banner.png">
+
+    </section>
+
+    <!-- LINK BOX------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section id="links" class="sec">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light linkbox">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">CryptalArchive!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">No Ads</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Fan Art</a></li>
+                <li><a class="dropdown-item" href="#">Our Art</a></li>
+                <li><a class="dropdown-item" href="#">Memes!</a></li>
+                </ul>
+            </li>
+            </ul>
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item smlink">
+                <a class="nav-link" href="https://twitter.com/TwoHeadedAnimal">Twitter</a>
+                </li>
+                <li class="nav-item smlink">
+                <a class="nav-link" href="https://www.redbubble.com/studio/dashboard?ref=account-nav-dropdown">Redbubble</a>
+                </li>
+                <li class="nav-item smlink">
+                <a class="nav-link" href="https://discord.gg/VsjTpG8nHG">Discord</a>
+                </li>
+                <li class="nav-item smlink">
+                <a class="nav-link" href="https://www.patreon.com/CryptalArchive">Patreon</a>
+                </li>
+                <li class="nav-item smlink">
+                <a class="nav-link" href="https://www.twitch.tv/twoheadedanimal">Twitch</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </section>
+
+    <!-- AD SPACE----------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section id="ads" class="sec">
+    <!-- Not super sure how to go about this one but I will figure it out. -->
+    <div class="adbox">
+        <p>are you balding? put mayonnaise on your hair to instantly grow your hair back</p>
+    </div>
+
+    </section>
+    <section id="archive" class="sec">
+        <!-- probably want two columns, on mobile the page should take up the entire width with the navbar above -->
+            <div class="container">
+                <div class="row justify-content-between">
+                    <!-- Archive -->
+                    <div class="col-md-3 pagelistblock">
+                        <!-- links go here -->
+                        <p> Archive </p>
+                        <a href="index.html" class="comiclink"> 01 </a><br>
+                        <a href="02.html" class="comiclink"> 02 </a><br>
+                        <a href="#" class="comiclink"> 03 </a><br>
+                        <a href="#" class="comiclink"> 04 </a><br>
+                        <a href="#" class="comiclink"> 05 </a><br>
+                        <a href="#" class="comiclink"> 06 </a><br>
+                        <a href="#" class="comiclink"> 07 </a><br>
+                        <a href="#" class="comiclink"> 08 </a><br>
+                        <a href="#" class="comiclink"> 09 </a><br>
+                        <a href="#" class="comiclink"> 10 </a><br>
+                    </div>
+                    <div class="col-lg-8 col-12 pageblock">
+                        <!-- this can update based on which page is selected ezpz-->
+                        <p>page 1</p>
+                        <img id="currentpage" src="" class="img-fluid" alt="comicpageone">
+                        <div id="navbuttons">
+                            <!-- First Page (won't show up on first page)-->
+                            <a id="firstpage" style="text-align: left;" href="#">«</a>
+                            <!-- Previous Page (won't show up on first page)-->
+                            <a id="prevpage" href="#">Prev</a>
+                            <!-- Next Page (won't show up on latest page)-->
+                            <a id="nextpage" href="#">Next</a>
+                            <!-- Last Page (won't show up on last page)-->
+                            <a id="lastpage" style="text-align: right;" href="#">»</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script type="text/javascript">
+
+        window.onload = function(){
+      
+          setTimeout(function(){
+      
+            document.getElementById("loader").remove();
+      
+          },2000);
+      
+        };
+      
+    </script>
+    </body>
+    </html>

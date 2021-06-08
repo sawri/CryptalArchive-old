@@ -56,6 +56,22 @@ img {
   border: 1px;
   border-style: solid;
 }
+#archive {
+  display: inline-block;
+}
+
+/* PAGE */
+
+#navbuttons {
+  padding: 10px;
+  font-size: 20px;
+}
+#comicpage {
+  display: inline-block;
+  text-align: center;
+}
+
+
 
 @keyframes fadeinall {
 
