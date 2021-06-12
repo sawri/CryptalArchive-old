@@ -14,23 +14,7 @@
   .pagelistblock {
     display: none;
   }
-  #archive {
-    margin-right: 0;
-    margin-left: 0;
-  }
 }
-
-.icon {
-
-}
-
-.banner {
-
-}
-img {
-  display: inline-block;
-}
-
 /* LINK BOX */
 
 
@@ -56,9 +40,6 @@ img {
   border: 1px;
   border-style: solid;
 }
-#archive {
-  display: inline-block;
-}
 
 /* PAGE */
 
@@ -71,6 +52,9 @@ img {
   text-align: center;
 }
 
+.currentpage {
+  text-align: center;
+}
 
 
 @keyframes fadeinall {
